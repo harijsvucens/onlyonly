@@ -16,7 +16,18 @@
                 t = " w-mod-";
             n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch")
         }(window, document);
+        
+        $('.ham ico').on('click', function(){
+  $('body').addClass('no-scroll');
+});
+
+$('.close').on('click', function(){
+  $('body').removeClass('no-scroll');
+});
     </script>
+    <style>
+        .no-scroll {overflow:hidden;}
+    </style>
     <link href="https://uploads-ssl.webflow.com/img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <link href="https://uploads-ssl.webflow.com/img/webclip.png" rel="apple-touch-icon" />
 </head>
